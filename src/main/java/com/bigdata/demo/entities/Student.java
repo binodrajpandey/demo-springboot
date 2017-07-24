@@ -70,6 +70,10 @@ public class Student {
          return this.getName();
     }
 
+      public String toStringSecond(){
+         return this.getName();
+    }
+
     
     
     @Override

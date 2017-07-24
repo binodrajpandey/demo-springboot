@@ -64,7 +64,13 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
+    
+    public String toString(){
+         return this.getName();
+    }
 
+    
+    
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {

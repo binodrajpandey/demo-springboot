@@ -86,7 +86,7 @@ public class StudentController {
     public ResponseEntity<?> saveStudent(@RequestBody Student student){
         try {
               studentRepository.save(student);
-              return ResponseEntity.ok("Data saved to the database");
+              return ResponseEntity.ok("Data saved to prashant's database");
         } catch (Exception e) {
             
         return    ResponseEntity.badRequest().body("Couldn't insert data");

@@ -17,7 +17,8 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="student_id")
    private Long id;
-    
+    @Column(name = "phone")
+    private Long phone;
     @Column(name="name")
    private String name;
     

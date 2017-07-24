@@ -31,10 +31,7 @@ public class StudentController {
     @Autowired
     private StudentRepository studentRepository;
     
-    @GetMapping("/students")
-    public List<Student> findAllStudent(){
-      return studentRepository.findAll();
-    }
+  
     
      @GetMapping("/students/{id}")
     public ResponseEntity<?> findStudentById(@PathVariable Long id){
@@ -80,6 +77,11 @@ public class StudentController {
         studentRepository.delete(id);
     }
    
+    
+    @GetMapping("/students")
+    public List<Student> findStudents() {
+        return studentRepository.findAll();
+    }
     @PostMapping("/students")
     public ResponseEntity<?> saveStudent(@RequestBody Student student){
         try {
